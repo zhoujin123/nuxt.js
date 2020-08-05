@@ -1,0 +1,19 @@
+{
+  "name": "jojo_demo_web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "element-ui": "^2.13.2",
+    "nuxt": "^2.14.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "url-loader": "^4.1.0"
+  },
+  "devDependencies": {}
+}
