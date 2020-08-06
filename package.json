@@ -9,10 +9,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "element-ui": "^2.13.2",
     "nuxt": "^2.14.0",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2",
     "url-loader": "^4.1.0"
   },
   "devDependencies": {}

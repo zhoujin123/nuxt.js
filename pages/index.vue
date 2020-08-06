@@ -1,30 +1,17 @@
-<template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        nuxt-test-web
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+/* 
+  路由跳转，通过page目录自动生成路由
+  跳转使用nuxt-link  
+  name: 路由名称  params: 传参
+ */
+<template lang="pug">
+.page
+  ul
+    li
+      nuxt-link(:to="{name: 'index'}") HOME
+    li
+      nuxt-link(:to="{name: 'about', params: {aboutId: 13}}") About
+    li
+      nuxt-link(:to="{name: 'news', params: {newsId: 13}}") News
 </template>
 
 <script>
@@ -32,42 +19,4 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

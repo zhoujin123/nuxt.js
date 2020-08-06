@@ -1,3 +1,22 @@
 html {
-    color: 'red' !important
+    color: red !important
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+.news-enter-active,
+.news-leave-active {
+  transition: all 0.5s;
+  font-size: 40px;
+}
+.news-enter,
+.news-leave-active {
+  opacity: 0;
+  font-size: 20px;
 }

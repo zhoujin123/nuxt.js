@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>zhoujin-Jojo 的博客</p>
     <Nuxt />
   </div>
 </template>
